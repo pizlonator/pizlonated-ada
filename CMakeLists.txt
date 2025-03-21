@@ -35,7 +35,7 @@ if(ADA_TESTING OR ADA_BENCHMARKS OR ADA_TOOLS)
   endif()
   # We use simdjson in both the benchmarks and tests
   if(ADA_TESTING OR ADA_BENCHMARKS)
-    CPMAddPackage("gh:simdjson/simdjson@3.10.1")
+    CPMAddPackage("gh:pizlonator/pizlonated-simdjson#master")
   endif()
   # We use Google Benchmark, but it does not build under several 32-bit systems.
   if(ADA_BENCHMARKS AND (CMAKE_SIZEOF_VOID_P EQUAL 8))
